@@ -1,0 +1,34 @@
+
+.background{
+    -fx-background-color: #87ceeb;
+    -fx-start-margin: auto;
+    -fx-end-margin: auto;
+}
+
+.dashboard{
+    -fx-background-color: #5643ba;
+}
+
+.body-pane{
+    -fx-justify-content: center;
+}
+
+#header{
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+}
+
+.label{
+    -fx-text-fill: #234532;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+;
+}
+
+.button{
+    -fx-border-radius: 10px;
+    -fx-border-width: 0;
+    -fx-background-color: white;
+    -fx-text-fill: #5643ba;
+}
