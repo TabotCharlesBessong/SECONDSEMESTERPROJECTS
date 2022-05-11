@@ -1,35 +1,48 @@
 
 
-#include <iostream>'
+#include <iostream>
+#include <algorithm>
 #include <string>
 using namespace std;
 
 class Hotel{
   public:
     string hotelName;
-    int roomNumber;
+    // int roomNumber;
     string location;
+    int hotelValuation;
+    string message;
+    int recommendVal;
+    string hotels[] = {}
 
-    Hotel(string nameH , int numberH , string locH){
+    Hotel(string nameH ,  string locH , int valH , string messH , int recH){
       hotelName = nameH;
-      roomNumber = numberH;
+      // roomNumber = numberH;
       location = locH;
+      hotelValuation = valH;
+      message = messH;
+      recommendVal =  recH;
     }
 
-    string getHotelName(){
-      return hotelName;
-    }
+    // string getHotelName(){
+    //   return hotelName;
+    // }
 
-    string getRoomNumber(){
-      return roomNumber;
-    }
+    // string getRoomNumber(){
+    //   return roomNumber;
+    // }
 
-    string getLocation(){
-      return location;
-    }
+    // string getLocation(){
+    //   return location;
+    // }
 
-    void setHotelName(){
+    // void setHotelName(){
       
+    // }
+
+    void createHotel(string name , string location){
+      cout<<endl<<"Please enter the hotel name: "<<;
+      // cin>>
     }
     friend class Admin;
 };
@@ -53,13 +66,13 @@ class User{
 
   void setUserName(){
     cout<<endl<<"Please enter your username: ";
-    cin>>username;
+    // cin>>username;
 
   }
 
   void setUserId(){
     cout<<endl<<"Please enter your user id: ";
-    cin>>userid;
+    // cin>>userid;
   }
 };
 
@@ -74,4 +87,23 @@ class Admin{
       adminName = nameA;
       adminPin = pinA;
     }
+
+    void hotelExit(int arr[] , string hName){
+    int array[] = arr;
+    int target = hName;
+ 
+    bool exists = any_of(begin(array), end(array),
+                        [&](int i) {
+                            return i == target;
+                        });
+ 
+    if (exists) {
+        // std::cout << "Element found";
+        return true;
+    } else {
+        // std::cout << "Element not found";
+        return false;
+    }
+ 
+    return 0;
 };
