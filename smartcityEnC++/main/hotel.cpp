@@ -3,6 +3,7 @@
 #include <iostream>
 #include <algorithm>
 #include <string>
+#include <conio.h>
 using namespace std;
 
 class Hotel{
@@ -77,15 +78,32 @@ class User{
 };
 
 
-class Admin{
+class Admin {
   public:
     string adminName;
     int adminPin;
-    string hotels[10] = {};
-    string locations[10] = {};
+    // string hotels[10] = {};
+    // string locations[10] = {};
     Admin(string nameA , int pinA){
       adminName = nameA;
       adminPin = pinA;
+    }
+
+    void getAdminName(){
+      return adminName;
+    }
+
+    void getAdminPin(){
+      return adminPin;
+    }
+
+    void setAdmin(string prevName , int prevPin ){
+      if((prevName == adminName) && (prevPin == adminPin)){
+        cout<<endl<<"Please enter your name: ";
+        _getch();
+        cout<<endl<<"Please enter your pin";
+        _getch();
+      }
     }
 
     void hotelExit(int arr[] , string hName){
