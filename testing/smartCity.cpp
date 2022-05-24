@@ -394,10 +394,10 @@ Admin::~Admin() {
 }
 
 Admin::Admin() :User(2){
-	this->setName("Balemba");
+	this->setName("Charles");
 	
 	
-	this->adminPin=2468;
+	this->adminPin=1234;
 
 	cout<<"\nWelcome"<<endl;
 	cout<<"Whats your Name Sir"<<endl;
@@ -529,7 +529,7 @@ void Build::Application() {
 	              cout<<"\n\nDo you wish to book a hotel from the list?\nYes or No\n";
                    cin>>response;
 
-	              if(response==("yes")) {
+	              if(response==("yes") || response == ("YES") response== ("Yes") ) {
 	            	  cout<<"\nGive id of hotel chosen:\t";
 
 		                 int id;
