@@ -31,6 +31,7 @@ __published:	// IDE-managed Components
 	TLabel *Label2;
 	TLabel *Label1;
 	void __fastcall Return_btnClick(TObject *Sender);
+	void __fastcall CAccountClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TRegistrationForm(TComponent* Owner);

@@ -19,12 +19,12 @@ __fastcall TLoginForm::TLoginForm(TComponent* Owner)
 void __fastcall TLoginForm::returnMainClick(TObject *Sender)
 {
 	MainForm->Show();
-//	LoginForm->Hide();
+	this->Close();
 }
 //---------------------------------------------------------------------------
 void __fastcall TLoginForm::CaccountClick(TObject *Sender)
 {
 	RegistrationForm->Show();
-//    LoginForm->Hide();
+	this->Close();
 }
 //---------------------------------------------------------------------------

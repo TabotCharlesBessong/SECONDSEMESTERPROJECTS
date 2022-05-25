@@ -8,8 +8,8 @@
 #include <System.StartUpCopy.hpp>
 //---------------------------------------------------------------------------
 USEFORM("MainPanel.cpp", MainForm);
-USEFORM("RegistrationPanel.cpp", RegistrationForm);
 USEFORM("LoginPanel.cpp", LoginForm);
+USEFORM("RegistrationPanel.cpp", RegistrationForm);
 //---------------------------------------------------------------------------
 extern "C" int FMXmain()
 {
@@ -17,8 +17,8 @@ extern "C" int FMXmain()
 	{
 		Application->Initialize();
 		Application->CreateForm(__classid(TMainForm), &MainForm);
-		Application->CreateForm(__classid(TRegistrationForm), &RegistrationForm);
 		Application->CreateForm(__classid(TLoginForm), &LoginForm);
+		Application->CreateForm(__classid(TRegistrationForm), &RegistrationForm);
 		Application->Run();
 	}
 	catch (Exception &exception)

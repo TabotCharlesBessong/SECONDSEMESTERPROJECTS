@@ -47,6 +47,7 @@ object RegistrationForm: TRegistrationForm
     Size.PlatformDefault = False
     TabOrder = 12
     Text = 'Create Account'
+    OnClick = CAccountClick
   end
   object phone_no: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
