@@ -128,7 +128,7 @@ User::User(int y){
 
 
 User::User() {
-	  cout<<"\nHello Sir \n Whats your name  please:"<<endl;
+	  cout<<"\nHello Sir or Mdm \n Whats your name  please:"<<endl;
 	  string name;
 	  // getline(cin,name);
 		cin>>name;
