@@ -7,7 +7,6 @@
 #include<stdlib.h>
 using namespace std;
 
-
 class Hotel{
 
 public:
@@ -23,8 +22,6 @@ int recommendations=0;
     
 
 };
-
-
 
 class User{
 	private:
@@ -71,29 +68,22 @@ vector<Hotel> User::bookedHotels;
 vector<User> User::bookedUsers;
 
 
-
-
-
-
-
 class Admin:public User{
 
 private :
 
-int adminPin;
+int adminPassword;
 
 public:
 	static int hotelNumber;
 	static vector<Hotel> hotelsCreated;
 
-
-
 Admin(int x);
 ~Admin();
 Admin();
 
-int getAdminPin() const;
-void setAdminPin(int adminPin);
+int getadminPassword() const;
+void setadminPassword(int adminPassword);
 void hotelCreate();
 void evaluation();
 static void displayHotel();
@@ -107,9 +97,6 @@ class Build{
 	public:
 	string response;
 	int choice;
-
-
-		
 
 	void Application();
 //	void userRunner();
@@ -126,8 +113,6 @@ Build Aa;
 // return 0;
 }
 
-
-
 Hotel::Hotel(string hName, string hLocation, int prc)
  :hotelName(hName),hotelLocation(hLocation),price(prc) {
 
@@ -137,20 +122,16 @@ Hotel::Hotel(string hName, string hLocation, int prc)
 
 	}
 
-  
-
-
-
-
 
 User::User(int y){
 	}
 
 
 User::User() {
-	  cout<<"\nHello Sir \n Whats your name \t please:"<<endl;
+	  cout<<"\nHello Sir \n Whats your name  please:"<<endl;
 	  string name;
-	  getline(cin,name);
+	  // getline(cin,name);
+		cin>>name;
 	  this->name=name;
 
 
@@ -183,12 +164,9 @@ Hotel User::getHotel() const{
 }
 
 
-
 void User::setHotel(Hotel hotel) {
 	this->hotel = hotel;
 }
-
-
 
 string User::getName() const{
       return name;
@@ -221,8 +199,6 @@ void User::setName(string name){
    void User::setContact(int contact){
       this->contact=contact;
   }
-
-
 
 
 void User::book() {
@@ -305,8 +281,6 @@ void User::book(int Hotelrank){
 
 	                 flag++;
 	                 }
-
-
 	    }
 	    if(flag>0){
 	         cout<<"\n\nGive ID of hotel chosen:\t";
@@ -371,16 +345,13 @@ cout<<endl;
 	            }
 	        }
 
-
-
-
-int Admin::getAdminPin() const{
-	return adminPin;
+int Admin::getadminPassword() const{
+	return adminPassword;
 }
 
 
-void Admin::setAdminPin(int adminPin) {
-	this->adminPin = adminPin;
+void Admin::setadminPassword(int adminPassword) {
+	this->adminPassword = adminPassword;
 }
 
 
@@ -397,7 +368,7 @@ Admin::Admin() :User(2){
 	this->setName("Charles");
 	
 	
-	this->adminPin=1234;
+	this->adminPassword=1234;
 
 	cout<<"\nWelcome"<<endl;
 	cout<<"Whats your Name Sir"<<endl;
@@ -408,7 +379,7 @@ Admin::Admin() :User(2){
 	int pin;
 	cin>>pin;
 
-	if(name==this->getName()&&pin==this->adminPin) {
+	if(name==this->getName()&&pin==this->adminPassword) {
              cout<<endl<<endl;
 		   ;
 		cout<<"\nWelcome "+this->getName();
@@ -421,7 +392,6 @@ Admin::Admin() :User(2){
 	}
 }
 
-
 void Admin::hotelCreate(){
 
 	cout<<"\nHow many Hotels do you wish to register:"<<endl;
@@ -429,22 +399,18 @@ void Admin::hotelCreate(){
 	cin>>numberOfHotels;
 
 	for(int i=1;i<=numberOfHotels; i++) {
-		cout<<"\n\n\t\t\t\tHotel Number "<<hotelNumber;
-		cout<<"\n\Enter the name of the Hotel:"<<endl;
+		cout<<"\n\n\t\tHotel Number "<<hotelNumber;
+		cout<<"\nEnter the name of the Hotel:"<<endl;
 		string name;
 		cin>>name;
-
-
-		cout<<"\nEnter Hotel's Location':"<<endl;
-		string location;
-		cin>>location;
-
 
 		cout<<"\nEnter the price of the Hotel:"<<endl;
 		int price;
 		cin>>price;
 
-
+		cout<<"\nEnter Hotel's Location':"<<endl;
+		string location;
+		cin>>location;
 
 		Hotel hot1(name,location,price);
 		Admin::hotelsCreated.push_back(hot1);
@@ -493,7 +459,7 @@ cout<<endl<<endl;
 void Build::Application() {
 		while(true) {
                  
-		cout<<"\nSMART CITY"<<endl;
+		cout<<"\nSMART CITY LIMITED CORP"<<endl;
 		
 		cout<<"Are you an admin or a client?\n";
 
@@ -529,13 +495,12 @@ void Build::Application() {
 	              cout<<"\n\nDo you wish to book a hotel from the list?\nYes or No\n";
                    cin>>response;
 
-	              if(response==("yes") || response == ("YES") response== ("Yes") ) {
+	              if(response==("yes") || response == ("YES") || response== ("Yes") ) {
 	            	  cout<<"\nGive id of hotel chosen:\t";
 
 		                 int id;
 		                 cin>>id;
 		                cout<<endl<<endl;
-
 		                 cout<<"\nThe hotel you have chosen is:\n\n";
 		                 cout<<"Name of hotel:\t"<<Admin::hotelsCreated.at(id).hotelName+"\nRank of hotel:\t"<<Admin::hotelsCreated.at(id).rank<<"\nLocation:\t"
 		                         <<Admin::hotelsCreated.at(id).hotelLocation<<"\nPrice of hotel:\t"<<Admin::hotelsCreated.at(id).price;
@@ -587,9 +552,6 @@ void Build::Application() {
 		}
 
 
-	
-
-	    
 
 	    if(response=="admin"||response=="ADMIN" || response == "Admin") {
 	    cout<<endl;
@@ -597,10 +559,7 @@ void Build::Application() {
 	    	
 		Admin admin;
 
-		  cout<<"\n";
-		 
-
-	        cout<<"\nEnter 1 to Register Hotel";
+	        cout<<endl<<"\nEnter 1 to Register Hotel";
 	        cout<<"\nEnter 2 to view list of registered Hotels";
 	       cout<<"\nEnter 3 to view list of booked Hotels";
 	        cout<<"\nEnter 4 to View list of Clients";
@@ -681,6 +640,3 @@ User::displayUsersBooked();
 
 	    }
 	
-
-
-
