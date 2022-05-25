@@ -1,0 +1,22 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#pragma hdrstop
+
+#include "AdminRegistratonPanel.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+TAdminRegPanel *AdminRegPanel;
+//---------------------------------------------------------------------------
+__fastcall TAdminRegPanel::TAdminRegPanel(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TAdminRegPanel::CAccountClick(TObject *Sender)
+{
+	CongratsForm->Show();
+
+}
+//---------------------------------------------------------------------------

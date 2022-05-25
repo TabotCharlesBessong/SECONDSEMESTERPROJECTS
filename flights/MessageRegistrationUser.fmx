@@ -1,0 +1,37 @@
+object MsgForm: TMsgForm
+  Left = 0
+  Top = 0
+  Caption = 'Login'
+  ClientHeight = 336
+  ClientWidth = 503
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Text1: TText
+    Position.X = 104.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Account Successfully Created'
+  end
+  object returnHome: TButton
+    Position.X = 56.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Return Home'
+  end
+  object Continue: TButton
+    Position.X = 288.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Continue'
+  end
+end

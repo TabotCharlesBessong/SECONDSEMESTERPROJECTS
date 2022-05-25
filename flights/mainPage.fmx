@@ -1,12 +1,15 @@
-object Form1: TForm1
-  Left = 0
-  Top = 0
-  Caption = 'Form1'
+object MainForm: TMainForm
+  Left = 469
+  Top = 277
+  Caption = 'Main '
   ClientHeight = 355
   ClientWidth = 513
+  Position = Designed
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  Left = 469
+  Top = 277
   DesignerMasterStyle = 0
   object Image1: TImage
     MultiResBitmap.Height = 57
@@ -214,6 +217,7 @@ object Form1: TForm1
     Size.PlatformDefault = False
     TabOrder = 4
     Text = 'Login As User'
+    OnClick = homeUBtnClick
   end
   object Button2: TButton
     Position.X = 280.000000000000000000
@@ -223,5 +227,6 @@ object Form1: TForm1
     Size.PlatformDefault = False
     TabOrder = 3
     Text = 'Login As Admin'
+    OnClick = Button2Click
   end
 end
