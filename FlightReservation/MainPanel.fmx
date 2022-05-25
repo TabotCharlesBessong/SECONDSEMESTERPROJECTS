@@ -35,6 +35,25 @@ object MainForm: TMainForm
     Size.Height = 57.000000000000000000
     Size.PlatformDefault = False
     Text = 'WELCOME TO TRAVELSAFE AIRLINES'
+<<<<<<< HEAD
+=======
+    TabOrder = 2
+  end
+  object passenger_img: TImageControl
+    Position.X = 278.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object ImageControl1: TImageControl
+    Position.X = 70.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+>>>>>>> 05f84b8990b347aefb7e5d62283a1c486f59b836
     TabOrder = 0
   end
   object Image1: TImage
