@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.exe
 =======
 =======
@@ -17,3 +18,10 @@ testing/smartCity.exe
 =======
 /FlightReservation
 >>>>>>> OOP
+=======
+*.exe
+*.log
+*.json
+*.pdf
+
+>>>>>>> testing

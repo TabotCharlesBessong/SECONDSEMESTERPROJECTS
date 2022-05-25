@@ -73,8 +73,8 @@ class Bank
 		cin>>accname;
 		cout<<"\n\t\tWhich types of Account You wanna Create?\n";
 		cout<<"\t\t\t\t*Saving\n";
-		cout<<"\t\t\t\t*\n";
-		cout<<"\t\t\t\t*\n";
+		cout<<"\t\t\t\t*\ncurrent";
+		cout<<"\t\t\t\t*\nactual";
 		cout<<"\t\n\t";cin>>acctype;	
 			cout<<"\n\t\tDeposite the Initial Balance:";
 			cin>>ibalance;
