@@ -1,0 +1,28 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#pragma hdrstop
+
+#include "MainPanel.h"
+#include "LoginPanel.h"
+#include "RegistrationPanel.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+TMainForm *MainForm;
+//---------------------------------------------------------------------------
+__fastcall TMainForm::TMainForm(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TMainForm::admin_login_btnClick(TObject *Sender)
+{
+    LoginForm->show();
+}
+//---------------------------------------------------------------------------
+void __fastcall TMainForm::passenger_login_btnClick(TObject *Sender)
+{
+	RegistrationForm->show();
+}
+//---------------------------------------------------------------------------
