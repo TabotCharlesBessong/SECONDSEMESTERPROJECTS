@@ -1,0 +1,31 @@
+//---------------------------------------------------------------------------
+
+#ifndef LoginPanelH
+#define LoginPanelH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+#include <FMX.Controls.Presentation.hpp>
+#include <FMX.Edit.hpp>
+#include <FMX.StdCtrls.hpp>
+#include <FMX.Types.hpp>
+//---------------------------------------------------------------------------
+class TLoginForm : public TForm
+{
+__published:	// IDE-managed Components
+	TEdit *Setpwd;
+	TLabel *Label3;
+	TButton *Submit;
+	TEdit *Uname;
+	TLabel *Label2;
+	TLabel *Label1;
+	TLabel *Caccount;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TLoginForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TLoginForm *LoginForm;
+//---------------------------------------------------------------------------
+#endif
