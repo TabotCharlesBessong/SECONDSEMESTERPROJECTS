@@ -6,6 +6,7 @@
 
 #include "RegistrationPanel.h"
 #include "LoginPanel.h"
+#include "messageRegistrationUser.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.fmx"
@@ -24,6 +25,12 @@ void __fastcall TRegistrationForm::Return_btnClick(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall TRegistrationForm::CAccountClick(TObject *Sender)
 {
+<<<<<<< HEAD
+	  userMessage->Show();
+}
+//---------------------------------------------------------------------------
+
+=======
 	fstream myFile;
 	myFile.open("registeredUser.txt", ios::app);
 	if(myFile.is_open()){
@@ -39,3 +46,4 @@ void __fastcall TRegistrationForm::CAccountClick(TObject *Sender)
 	}
 }
 //---------------------------------------------------------------------------
+>>>>>>> 05f84b8990b347aefb7e5d62283a1c486f59b836

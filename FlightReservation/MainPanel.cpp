@@ -5,6 +5,7 @@
 
 #include "MainPanel.h"
 #include "LoginPanel.h"
+#include "adminLoginPanel.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.fmx"
@@ -17,7 +18,7 @@ __fastcall TMainForm::TMainForm(TComponent* Owner)
 //---------------------------------------------------------------------------
 void __fastcall TMainForm::admin_login_btnClick(TObject *Sender)
 {
-	LoginForm->Show();
+	loginAdmin->Show();
 	MainForm->Hide();
 }
 //---------------------------------------------------------------------------
