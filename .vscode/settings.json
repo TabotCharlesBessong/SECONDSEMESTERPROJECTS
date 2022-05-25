@@ -1,8 +1,11 @@
 {
+<<<<<<< HEAD
   "files.associations": {
     "*html": "html",
     "iostream": "cpp",
     "string": "cpp"
   },
+=======
+>>>>>>> OOP
   "C_Cpp.errorSquiggles": "Disabled"
 }

@@ -1,1 +1,12 @@
+<<<<<<< HEAD
 *.exe
+=======
+.vscode/configurationCache.log
+.vscode/dryrun.log
+.vscode/targets.log
+.vscode/tasks.json
+files/example.pdf
+files/itemFiles.exe
+testing/smartCity.exe
+/FlightReservation
+>>>>>>> OOP
