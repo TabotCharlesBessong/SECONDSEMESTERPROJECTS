@@ -1,23 +1,56 @@
 //---------------------------------------------------------------------------
 
+<<<<<<< HEAD
+#ifndef messageRegistrationUserH
+#define messageRegistrationUserH
+=======
 #ifndef MainPanelH
 #define MainPanelH
+>>>>>>> 9dc4a1565d66d5c9fabc0c37f5ed9c907d3ffc18
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <FMX.Controls.hpp>
 #include <FMX.Forms.hpp>
+<<<<<<< HEAD
+<<<<<<<< HEAD:FlightReservation/__history/MainPanel.h.~14~
+#include <FMX.Controls.Presentation.hpp>
+#include <FMX.StdCtrls.hpp>
+========
+#include <FMX.Objects.hpp>
+>>>>>>>> 9dc4a1565d66d5c9fabc0c37f5ed9c907d3ffc18:FlightReservation/__history/messageRegistrationUser.h.~2~
+#include <FMX.Types.hpp>
+#include <FMX.Controls.Presentation.hpp>
+#include <FMX.StdCtrls.hpp>
+=======
 #include <FMX.Controls.Presentation.hpp>
 #include <FMX.StdCtrls.hpp>
 #include <FMX.Types.hpp>
+>>>>>>> 9dc4a1565d66d5c9fabc0c37f5ed9c907d3ffc18
 //---------------------------------------------------------------------------
 class TMainForm : public TForm
 {
 __published:	// IDE-managed Components
+<<<<<<< HEAD
+<<<<<<<< HEAD:FlightReservation/__history/MainPanel.h.~14~
+	TButton *passenger_login_btn;
+	TButton *admin_login_btn;
+	TLabel *x;
+	TImageControl *passenger_img;
+	TImageControl *ImageControl1;
+	void __fastcall admin_login_btnClick(TObject *Sender);
+	void __fastcall passenger_login_btnClick(TObject *Sender);
+========
+	TText *Text1;
+	TButton *returnHome;
+	TButton *Button2;
+>>>>>>>> 9dc4a1565d66d5c9fabc0c37f5ed9c907d3ffc18:FlightReservation/__history/messageRegistrationUser.h.~2~
+=======
 	TButton *passenger_login_btn;
 	TButton *admin_login_btn;
 	TLabel *x;
 	void __fastcall admin_login_btnClick(TObject *Sender);
 	void __fastcall passenger_login_btnClick(TObject *Sender);
+>>>>>>> 9dc4a1565d66d5c9fabc0c37f5ed9c907d3ffc18
 private:	// User declarations
 public:		// User declarations
 	__fastcall TMainForm(TComponent* Owner);
