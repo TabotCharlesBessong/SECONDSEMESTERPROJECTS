@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.exe
 =======
+=======
+>>>>>>> OOP
 .vscode/configurationCache.log
 .vscode/dryrun.log
 .vscode/targets.log
@@ -8,5 +11,9 @@
 files/example.pdf
 files/itemFiles.exe
 testing/smartCity.exe
+<<<<<<< HEAD
+/FlightReservation
+>>>>>>> OOP
+=======
 /FlightReservation
 >>>>>>> OOP
