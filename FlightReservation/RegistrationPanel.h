@@ -15,9 +15,10 @@
 class TRegistrationForm : public TForm
 {
 __published:	// IDE-managed Components
+	TButton *Return_btn;
 	TEdit *Fname;
 	TComboBox *sex;
-	TButton *cAccount;
+	TButton *CAccount;
 	TEdit *phone_no;
 	TLabel *Label7;
 	TEdit *Cpwd;
@@ -29,7 +30,6 @@ __published:	// IDE-managed Components
 	TLabel *Label3;
 	TLabel *Label2;
 	TLabel *Label1;
-	TButton *Return_btn;
 	void __fastcall Return_btnClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations

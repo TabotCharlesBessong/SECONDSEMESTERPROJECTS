@@ -1,16 +1,16 @@
-object LoginForm: TLoginForm
+object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Login'
+  Caption = 'Form1'
   ClientHeight = 372
   ClientWidth = 422
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
-  object LoginForm: TEdit
+  object Uname: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 6
+    TabOrder = 7
     Position.X = 104.000000000000000000
     Position.Y = 104.000000000000000000
     Size.Width = 233.000000000000000000
@@ -23,18 +23,16 @@ object LoginForm: TLoginForm
     Size.Width = 104.000000000000000000
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 9
+    TabOrder = 10
     Text = 'Create Account'
-    OnClick = CaccountClick
   end
   object returnMain: TButton
     Position.Y = 331.000000000000000000
     Size.Width = 104.000000000000000000
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 10
+    TabOrder = 11
     Text = 'Return'
-    OnClick = returnMainClick
   end
   object Label1: TLabel
     Position.X = 32.000000000000000000
@@ -52,7 +50,7 @@ object LoginForm: TLoginForm
     Size.Height = 25.000000000000000000
     Size.PlatformDefault = False
     Text = 'Password'
-    TabOrder = 1
+    TabOrder = 2
   end
   object Submit: TButton
     Position.X = 104.000000000000000000
@@ -60,18 +58,18 @@ object LoginForm: TLoginForm
     Size.Width = 97.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 4
+    TabOrder = 5
     Text = 'Login'
   end
   object Label3: TLabel
     Position.X = 192.000000000000000000
     Position.Y = 56.000000000000000000
     Text = 'WELCOME'
-    TabOrder = 5
+    TabOrder = 6
   end
   object Setpwd: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 2
+    TabOrder = 3
     Password = True
     Position.X = 104.000000000000000000
     Position.Y = 168.000000000000000000

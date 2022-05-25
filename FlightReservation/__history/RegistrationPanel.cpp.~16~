@@ -4,20 +4,13 @@
 #pragma hdrstop
 
 #include "RegistrationPanel.h"
-#include "LoginPanel.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.fmx"
-TRegistrationForm *RegistrationForm;
+TForm2 *Form2;
 //---------------------------------------------------------------------------
-__fastcall TRegistrationForm::TRegistrationForm(TComponent* Owner)
+__fastcall TForm2::TForm2(TComponent* Owner)
 	: TForm(Owner)
 {
-}
-//---------------------------------------------------------------------------
-void __fastcall TRegistrationForm::Return_btnClick(TObject *Sender)
-{
-	LoginForm->Show();
-	RegistrationForm->Hide();
 }
 //---------------------------------------------------------------------------

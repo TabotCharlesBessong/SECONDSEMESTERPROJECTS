@@ -25,7 +25,6 @@ object LoginForm: TLoginForm
     Size.PlatformDefault = False
     TabOrder = 9
     Text = 'Create Account'
-    OnClick = CaccountClick
   end
   object returnMain: TButton
     Position.Y = 331.000000000000000000

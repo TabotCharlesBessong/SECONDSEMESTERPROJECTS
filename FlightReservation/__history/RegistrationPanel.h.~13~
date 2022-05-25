@@ -1,34 +1,40 @@
 //---------------------------------------------------------------------------
 
-#ifndef LoginPanelH
-#define LoginPanelH
+#ifndef RegistrationPanelH
+#define RegistrationPanelH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <FMX.Controls.hpp>
 #include <FMX.Forms.hpp>
 #include <FMX.Controls.Presentation.hpp>
 #include <FMX.Edit.hpp>
+#include <FMX.ListBox.hpp>
 #include <FMX.StdCtrls.hpp>
 #include <FMX.Types.hpp>
 //---------------------------------------------------------------------------
-class TLoginForm : public TForm
+class TForm2 : public TForm
 {
 __published:	// IDE-managed Components
-	TEdit *LoginForm;
-	TButton *Caccount;
-	TButton *returnMain;
-	TLabel *Label1;
-	TLabel *Label2;
-	TButton *Submit;
+	TButton *Return_btn;
+	TEdit *Fname;
+	TComboBox *sex;
+	TButton *CAccount;
+	TEdit *phone_no;
+	TLabel *Label7;
+	TEdit *Cpwd;
+	TEdit *pwd;
+	TEdit *email;
+	TLabel *Label6;
+	TLabel *Label5;
+	TLabel *Label4;
 	TLabel *Label3;
-	TEdit *Setpwd;
-	void __fastcall returnMainClick(TObject *Sender);
-	void __fastcall CaccountClick(TObject *Sender);
+	TLabel *Label2;
+	TLabel *Label1;
 private:	// User declarations
 public:		// User declarations
-	__fastcall TLoginForm(TComponent* Owner);
+	__fastcall TForm2(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TLoginForm *LoginForm;
+extern PACKAGE TForm2 *Form2;
 //---------------------------------------------------------------------------
 #endif

@@ -16,7 +16,6 @@ object RegistrationForm: TRegistrationForm
     Size.PlatformDefault = False
     TabOrder = 14
     Text = 'Already have account login'
-    OnClick = Return_btnClick
   end
   object Fname: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]

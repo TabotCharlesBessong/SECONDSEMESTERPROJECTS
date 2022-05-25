@@ -1,4 +1,4 @@
-object MainForm: TMainForm
+object x: Tx
   Left = 0
   Top = 0
   Caption = 'Main'
